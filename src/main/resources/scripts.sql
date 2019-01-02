@@ -8,7 +8,7 @@ ID INT NOT NULL AUTO_INCREMENT,
 FIRST_NAME VARCHAR(20),
 LAST_NAME VARCHAR(20),
 EMAIL VARCHAR(50),
-PASSWORD VARCHAR(20),
+PASSWORD VARCHAR(200),
 PRIMARY KEY (ID),
 UNIQUE KEY(EMAIL)
 )
@@ -91,5 +91,3 @@ delete from user
 select * from user
 
 insert into user (email, first_name, last_name, password) values ('necmi3@aa.com', 'NEcmi', null, '$2a$10$IJ66gG9Rm99ZWNIUUxJmNeHS4cVR7YLNPLF4m5MLNyFBMmgBRiuNi')
-
-ALTER table USER modify password Varchar(100)
